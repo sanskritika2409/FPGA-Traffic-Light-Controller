@@ -226,16 +226,16 @@ Interactive control
 # 📸 Project Screenshots
 
 
-## 🚦 Traffic Simulation
+### 🚦 Traffic Simulation
 
-![Traffic Simulation](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/traffic_simulation.png?raw=true)
+![Traffic Simulation](images/traffic_simulation.png)
 
 
 ---
 
-## 📈 VCD Waveform
+### 📈 VCD Waveform
 
-![Traffic VCD Waveform](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/traffic_vcd.png?raw=true)
+![VCD Waveform](images/traffic_vcd.png)
 
 
 ---
@@ -243,23 +243,23 @@ Interactive control
 # 🖥️ Streamlit Dashboard
 
 
-## Dashboard View 1
+### ⚡ Dashboard Home
 
-![Dashboard 1](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard1.png?raw=true)
-
-
----
-
-## Dashboard View 2
-
-![Dashboard 2](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard2.png?raw=true)
+![Dashboard Home](images/dashboard1.png)
 
 
 ---
 
-## Dashboard View 3
+### 🚦 Traffic Light Visualization
 
-![Dashboard 3](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard3.png?raw=true)
+![Traffic Light Visualization](images/dashboard2.png)
+
+
+---
+
+### 📊 Timing Analysis
+
+![Timing Analysis](images/dashboard3.png)
 
 
 Interactive dashboard showing:
