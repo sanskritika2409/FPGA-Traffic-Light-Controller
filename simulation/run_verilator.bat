@@ -1,0 +1,1 @@
+verilator --cc ../rtl/*.v --exe ../tb/traffic_tb.v

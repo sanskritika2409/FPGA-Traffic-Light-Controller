@@ -1,0 +1,12 @@
+*.vcd
+*.log
+*.jou
+*.str
+*.cache
+*.tmp
+*.wdb
+*.bit
+*.bin
+*.o
+*.obj
+*.exe
