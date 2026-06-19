@@ -1,46 +1,47 @@
 # 🚦 FPGA-Based Traffic Light Controller with Streamlit Dashboard
 
 ![FPGA](https://img.shields.io/badge/FPGA-Verilog-blue)
-![Language](https://img.shields.io/badge/HDL-Verilog-orange)
+![HDL](https://img.shields.io/badge/HDL-Verilog-orange)
 ![Simulation](https://img.shields.io/badge/Simulation-Icarus%20Verilog-green)
-![Dashboard](https://img.shields.io/badge/UI-Streamlit-red)
+![Dashboard](https://img.shields.io/badge/Dashboard-Streamlit-red)
 
 ---
 
 # 📌 Project Overview
 
-The **FPGA-Based Traffic Light Controller** is a digital design project implemented using **Verilog HDL** and **Finite State Machine (FSM)** architecture.
+The **FPGA-Based Traffic Light Controller** is a digital hardware design project implemented using **Verilog HDL** and **Finite State Machine (FSM)** architecture.
 
-The project simulates a real-world 4-way traffic intersection controller where traffic lights change according to predefined timing sequences.
+The project simulates a real-world 4-way traffic intersection controller where traffic lights operate according to predefined timing sequences.
 
-A professional **Streamlit dashboard** is integrated to visualize:
+A professional **Streamlit Dashboard** is integrated to visualize:
 
-- 🚦 Live traffic signal states
+- 🚦 Traffic light states
 - ⏱ Timing behavior
 - 📊 FSM transitions
 - 🔄 Controller operation
 
-This project demonstrates concepts from:
+This project demonstrates concepts used in:
 
 - VLSI Design
 - FPGA Development
 - RTL Design
-- Digital Logic
+- Digital Logic Design
 - Hardware Verification
 
 ---
 
 # 🎯 Objective
 
-Design and verify a parameterized traffic light controller using:
+Design and verify a traffic light controller using:
 
 - Verilog HDL
 - FSM based control logic
 - Clock divider
-- Sequential and combinational logic
+- Sequential logic
+- Combinational logic
 - Testbench verification
 
-The system controls:
+The controller manages:
 
 - North-South traffic
 - East-West traffic
@@ -50,32 +51,25 @@ with safe signal transitions.
 ---
 
 # 🏗️ System Architecture
-
-
-          Clock Input
-               |
-               |
-         Clock Divider
-               |
-               |
-          FSM Controller
-               |
-               |
+         Clock Input
+              |
+              |
+        Clock Divider
+              |
+              |
+        FSM Controller
+              |
+              |
       Traffic Light Logic
-               |
-               |
-    -------------------------
-    |                       |
-
-North-South East-West
+              |
+    ---------------------
+    |                   |
+    North-South East-West
 Traffic Lights Traffic Lights
-
-
 
 ---
 
 # 🔥 Features
-
 
 ## Hardware Design
 
@@ -83,7 +77,7 @@ Traffic Lights Traffic Lights
 ✅ FSM Based Controller  
 ✅ Clock Divider  
 ✅ Reset Logic  
-✅ Modular Design  
+✅ Modular Architecture  
 
 
 ## Simulation
@@ -106,12 +100,11 @@ Traffic Lights Traffic Lights
 
 # 🧠 FSM Design
 
-
 The controller contains four main states:
 
 
 | State | North-South | East-West |
-|-|-|-|
+|------|-------------|-----------|
 | S0 | 🟢 Green | 🔴 Red |
 | S1 | 🟡 Yellow | 🔴 Red |
 | S2 | 🔴 Red | 🟢 Green |
@@ -119,9 +112,6 @@ The controller contains four main states:
 
 
 FSM Flow:
-
-
-
 S0
 |
 v
@@ -136,14 +126,9 @@ S3
 v
 S0
 
-
-
 ---
 
 # 📂 Project Structure
-
-
-
 FPGA-Traffic-Light-Controller
 
 │
@@ -167,10 +152,11 @@ FPGA-Traffic-Light-Controller
 │ └── traffic_controller.xdc
 │
 ├── images
-│ ├── project_structure.png
-│ ├── simulation.png
-│ ├── waveform.png
-│ └── dashboard.png
+│ ├── traffic_simulation.png
+│ ├── traffic_vcd.png
+│ ├── dashboard1.png
+│ ├── dashboard2.png
+│ └── dashboard3.png
 │
 ├── reports
 │
@@ -178,26 +164,24 @@ FPGA-Traffic-Light-Controller
 └── .gitignore
 
 
-
 ---
 
 # 🛠️ Tools Used
 
-
-### Hardware Design
+## Hardware Design
 
 - Verilog HDL
 - FPGA Architecture
 - FSM Design
 
 
-### Simulation
+## Simulation
 
 - Icarus Verilog
 - GTKWave
 
 
-### Visualization
+## Dashboard
 
 - Python
 - Streamlit
@@ -212,7 +196,6 @@ FPGA-Traffic-Light-Controller
 
 ## Compile
 
-
 ```bash
 iverilog -o traffic_sim rtl/clk_en.v rtl/traffic_fsm.v rtl/top.v tb/traffic_tb.v
 Run
@@ -221,7 +204,6 @@ vvp traffic_sim
 Output:
 
 VCD info: dumpfile traffic.vcd opened for output
-
 📊 Streamlit Dashboard
 
 Install dependencies:
@@ -234,65 +216,37 @@ Run:
 
 streamlit run app.py
 
-Dashboard Features:
+Dashboard provides:
 
-Real-time traffic light display
+Real-time traffic visualization
 FSM state tracking
-Timing visualization
-Controller monitoring
+Timing analysis
+Interactive control
 📸 Project Screenshots
-1. Project Structure
-
-# 📸 Project Screenshots
-
-
-# 📸 Project Screenshots
-
-
-## 🚦 Traffic Simulation
-
+🚦 Traffic Simulation
 <img src="./images/traffic_simulation.png" width="900">
-
 
 Successful Verilog simulation execution using Icarus Verilog.
 
-
----
-
-## 📈 VCD Waveform
-
+📈 VCD Waveform
 <img src="./images/traffic_vcd.png" width="900">
 
+Waveform generated from Verilog testbench showing FSM transitions and traffic signal changes.
 
-Waveform generated from the Verilog testbench showing FSM transitions and traffic light signals.
-
-
----
-
-# 🖥️ Streamlit Dashboard
-
-
-## Dashboard Screenshot 1
-
+🖥️ Streamlit Dashboard
+Dashboard View 1
 <img src="./images/dashboard1.png" width="900">
-
-
-## Dashboard Screenshot 2
-
+Dashboard View 2
 <img src="./images/dashboard2.png" width="900">
-
-
-## Dashboard Screenshot 3
-
+Dashboard View 3
 <img src="./images/dashboard3.png" width="900">
-
-
 
 Interactive dashboard showing:
 
 Current traffic state
 Signal visualization
 Timing charts
+FSM monitoring
 🔬 Verification
 
 The testbench verifies:
@@ -344,6 +298,7 @@ Future upgrades:
 🚗 Vehicle density sensors
 🌐 IoT traffic monitoring
 🤖 AI based adaptive traffic control
+
 🎓 Learning Outcomes
 
 Through this project:
@@ -353,9 +308,12 @@ Implemented FSM based hardware controller
 Created verification environment
 Generated simulation waveforms
 Developed FPGA-ready architecture
-Built hardware visualization dashboard
+Built Streamlit visualization dashboard
 👩‍💻 Author
 
 Sanskritika Awasthi
 
 VLSI | FPGA | Verilog | Digital Design
+
+
+
