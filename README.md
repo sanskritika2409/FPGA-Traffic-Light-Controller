@@ -223,23 +223,44 @@ FSM state tracking
 Timing analysis
 Interactive control
 📸 Project Screenshots
-🚦 Traffic Simulation
-<img src="./images/traffic_simulation.png" width="900">
+# 📸 Project Screenshots
 
-Successful Verilog simulation execution using Icarus Verilog.
 
-📈 VCD Waveform
-<img src="./images/traffic_vcd.png" width="900">
+## 🚦 Traffic Simulation
 
-Waveform generated from Verilog testbench showing FSM transitions and traffic signal changes.
+<img src="https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/traffic_simulation.png" width="900">
 
-🖥️ Streamlit Dashboard
-Dashboard View 1
-<img src="./images/dashboard1.png" width="900">
-Dashboard View 2
-<img src="./images/dashboard2.png" width="900">
-Dashboard View 3
-<img src="./images/dashboard3.png" width="900">
+
+---
+
+## 📈 VCD Waveform
+
+<img src="https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/traffic_vcd.png" width="900">
+
+
+---
+
+# 🖥️ Streamlit Dashboard
+
+
+## Dashboard View 1
+
+<img src="https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard1.png" width="900">
+
+
+---
+
+## Dashboard View 2
+
+<img src="https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard2.png" width="900">
+
+
+---
+
+## Dashboard View 3
+
+<img src="https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard3.png" width="900">
+
 
 Interactive dashboard showing:
 
