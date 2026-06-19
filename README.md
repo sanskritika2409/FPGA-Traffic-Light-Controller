@@ -228,14 +228,14 @@ Interactive control
 
 ## 🚦 Traffic Simulation
 
-![Traffic Simulation](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/traffic_simulation.png)
+![Traffic Simulation](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/traffic_simulation.png?raw=true)
 
 
 ---
 
 ## 📈 VCD Waveform
 
-![Traffic VCD](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/traffic_vcd.png)
+![Traffic VCD Waveform](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/traffic_vcd.png?raw=true)
 
 
 ---
@@ -245,21 +245,21 @@ Interactive control
 
 ## Dashboard View 1
 
-![Dashboard 1](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard1.png)
+![Dashboard 1](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard1.png?raw=true)
 
 
 ---
 
 ## Dashboard View 2
 
-![Dashboard 2](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard2.png)
+![Dashboard 2](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard2.png?raw=true)
 
 
 ---
 
 ## Dashboard View 3
 
-![Dashboard 3](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard3.png)
+![Dashboard 3](https://github.com/sanskritika2409/FPGA-Traffic-Light-Controller/blob/main/images/dashboard3.png?raw=true)
 
 
 Interactive dashboard showing:
