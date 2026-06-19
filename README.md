@@ -20,7 +20,7 @@ A professional **Streamlit Dashboard** is integrated to visualize:
 - 📊 FSM transitions
 - 🔄 Controller operation
 
-This project demonstrates concepts used in:
+This project demonstrates:
 
 - VLSI Design
 - FPGA Development
@@ -41,31 +41,31 @@ Design and verify a traffic light controller using:
 - Combinational logic
 - Testbench verification
 
-The controller manages:
-
-- North-South traffic
-- East-West traffic
-
-with safe signal transitions.
-
 ---
 
 # 🏗️ System Architecture
-         Clock Input
-              |
-              |
-        Clock Divider
-              |
-              |
-        FSM Controller
-              |
-              |
-      Traffic Light Logic
-              |
-    ---------------------
-    |                   |
-    North-South East-West
-Traffic Lights Traffic Lights
+
+```
+
+Clock Input
+|
+|
+Clock Divider
+|
+|
+FSM Controller
+|
+|
+Traffic Light Logic
+|
+-
+
+|               |
+North-South   East-West
+Traffic       Traffic
+Lights        Lights
+
+```
 
 ---
 
@@ -90,7 +90,7 @@ Traffic Lights Traffic Lights
 ## Dashboard
 
 ✅ Streamlit Interface  
-✅ Animated Traffic Signals  
+✅ Traffic Signal Visualization  
 ✅ FSM Monitoring  
 ✅ Timing Charts  
 ✅ Interactive Controls  
@@ -100,11 +100,9 @@ Traffic Lights Traffic Lights
 
 # 🧠 FSM Design
 
-The controller contains four main states:
-
 
 | State | North-South | East-West |
-|------|-------------|-----------|
+|---|---|---|
 | S0 | 🟢 Green | 🔴 Red |
 | S1 | 🟡 Yellow | 🔴 Red |
 | S2 | 🔴 Red | 🟢 Green |
@@ -112,6 +110,9 @@ The controller contains four main states:
 
 
 FSM Flow:
+
+```
+
 S0
 |
 v
@@ -126,47 +127,53 @@ S3
 v
 S0
 
+```
+
 ---
 
 # 📂 Project Structure
+
+
+```
+
 FPGA-Traffic-Light-Controller
 
 │
 ├── rtl
-│ ├── clk_en.v
-│ ├── traffic_fsm.v
-│ ├── timer.v
-│ └── top.v
+│   ├── clk_en.v
+│   ├── traffic_fsm.v
+│   ├── timer.v
+│   └── top.v
 │
 ├── tb
-│ └── traffic_tb.v
+│   └── traffic_tb.v
 │
 ├── simulation
-│ └── traffic.vcd
+│   └── traffic.vcd
 │
 ├── dashboard
-│ ├── app.py
-│ └── requirements.txt
+│   ├── app.py
+│   └── requirements.txt
 │
 ├── constraints
-│ └── traffic_controller.xdc
+│   └── traffic_controller.xdc
 │
 ├── images
-│ ├── traffic_simulation.png
-│ ├── traffic_vcd.png
-│ ├── dashboard1.png
-│ ├── dashboard2.png
-│ └── dashboard3.png
-│
-├── reports
+│   ├── traffic_simulation.png
+│   ├── traffic_vcd.png
+│   ├── dashboard1.png
+│   ├── dashboard2.png
+│   └── dashboard3.png
 │
 ├── README.md
 └── .gitignore
 
+````
 
 ---
 
 # 🛠️ Tools Used
+
 
 ## Hardware Design
 
@@ -198,76 +205,81 @@ FPGA-Traffic-Light-Controller
 
 ```bash
 iverilog -o traffic_sim rtl/clk_en.v rtl/traffic_fsm.v rtl/top.v tb/traffic_tb.v
-Run
+````
+
+## Run
+
+```bash
 vvp traffic_sim
+```
 
 Output:
 
+```
 VCD info: dumpfile traffic.vcd opened for output
-📊 Streamlit Dashboard
+```
 
-Install dependencies:
+---
 
+# 📊 Streamlit Dashboard
+
+Install:
+
+```bash
 cd dashboard
-
 pip install -r requirements.txt
+```
 
 Run:
 
+```bash
 streamlit run app.py
+```
 
 Dashboard provides:
 
-Real-time traffic visualization
-FSM state tracking
-Timing analysis
-Interactive control
-📸 Project Screenshots
-# 📸 Project Screenshots
+* Real-time traffic visualization
+* FSM state tracking
+* Timing analysis
+* Interactive control
 
+---
+
+# 📸 Project Screenshots
 
 ### 🚦 Traffic Simulation
 
-![Traffic Simulation](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/traffic_simulation.png)
-
+![Traffic Simulation](images/traffic_simulation.png)
 
 ---
 
 ### 📈 VCD Waveform
 
-![VCD Waveform](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/traffic_vcd.png)
-
+![VCD Waveform](images/traffic_vcd.png)
 
 ---
 
 # 🖥️ Streamlit Dashboard
 
-
 ### ⚡ Dashboard Home
 
-![Dashboard Home](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard1.png)
-
+![Dashboard Home](images/dashboard1.png)
 
 ---
 
 ### 🚦 Traffic Light Visualization
 
-![Traffic Light Visualization](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard2.png)
-
+![Traffic Light Visualization](images/dashboard2.png)
 
 ---
 
 ### 📊 Timing Analysis
 
-![Timing Analysis](https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard3.png)
+![Timing Analysis](images/dashboard3.png)
 
-Interactive dashboard showing:
+---
 
-Current traffic state
-Signal visualization
-Timing charts
-FSM monitoring
-🔬 Verification
+# 🔬 Verification
 
 The testbench verifies:
 
@@ -277,7 +289,11 @@ The testbench verifies:
 ✔ Correct traffic sequence
 ✔ No conflicting green signals
 
-🚀 FPGA Implementation Flow
+---
+
+# 🚀 FPGA Implementation Flow
+
+```
 Verilog RTL
 
       ↓
@@ -299,41 +315,49 @@ FPGA Programming
       ↓
 
 LED Traffic Simulation
+```
 
-🌍 Real World Applications
+---
 
-This design concept is used in:
+# 🌍 Real World Applications
 
-Smart city traffic systems
-Industrial automation
-Embedded controllers
-Automotive electronics
-Digital control systems
-🔮 Future Improvements
+* Smart city traffic systems
+* Industrial automation
+* Embedded controllers
+* Automotive electronics
+* Digital control systems
 
-Future upgrades:
+---
 
-🚶 Pedestrian crossing support
-🚑 Emergency vehicle priority
-🚗 Vehicle density sensors
-🌐 IoT traffic monitoring
-🤖 AI based adaptive traffic control
+# 🔮 Future Improvements
 
-🎓 Learning Outcomes
+* 🚶 Pedestrian crossing support
+* 🚑 Emergency vehicle priority
+* 🚗 Vehicle density sensors
+* 🌐 IoT traffic monitoring
+* 🤖 AI based adaptive traffic control
+
+---
+
+# 🎓 Learning Outcomes
 
 Through this project:
 
-Designed RTL modules using Verilog
-Implemented FSM based hardware controller
-Created verification environment
-Generated simulation waveforms
-Developed FPGA-ready architecture
-Built Streamlit visualization dashboard
-👩‍💻 Author
+* Designed RTL modules using Verilog
+* Implemented FSM based controller
+* Created verification environment
+* Generated simulation waveforms
+* Developed FPGA-ready architecture
+* Built Streamlit visualization dashboard
 
-Sanskritika Awasthi
+---
+
+# 👩‍💻 Author
+
+**Sanskritika Awasthi**
 
 VLSI | FPGA | Verilog | Digital Design
+
 
 
 
