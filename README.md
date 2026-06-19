@@ -228,14 +228,14 @@ Interactive control
 
 ### 🚦 Traffic Simulation
 
-<img src="images/traffic_simulation.png" alt="Traffic Simulation">
+<img src="https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/traffic_simulation.png" width="800">
 
 
 ---
 
 ### 📈 VCD Waveform
 
-<img src="images/traffic_vcd.png" alt="VCD Waveform">
+<img src="https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/traffic_vcd.png" width="800">
 
 
 ---
@@ -245,21 +245,21 @@ Interactive control
 
 ### ⚡ Dashboard Home
 
-<img src="C:\Projects by iip\VLSI\FPGA-Traffic-Light-Controller\images\dashboard1.png" alt="Dashboard Home">
+<img src="https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard1.png" width="800">
 
 
 ---
 
 ### 🚦 Traffic Light Visualization
 
-<img src="images/dashboard2.png" alt="Traffic Light Visualization">
+<img src="https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard2.png" width="800">
 
 
 ---
 
 ### 📊 Timing Analysis
 
-<img src="images/dashboard3.png" alt="Timing Analysis">
+<img src="https://raw.githubusercontent.com/sanskritika2409/FPGA-Traffic-Light-Controller/main/images/dashboard3.png" width="800">
 
 
 Interactive dashboard showing:
