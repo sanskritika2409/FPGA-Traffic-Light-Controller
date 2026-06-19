@@ -251,14 +251,20 @@ Controller monitoring
 
 ## 🚦 Traffic Simulation
 
-![Traffic Simulation](images/traffic_simulation.png)
+<img src="./images/traffic_simulation.png" width="900">
+
+
+Successful Verilog simulation execution using Icarus Verilog.
 
 
 ---
 
 ## 📈 VCD Waveform
 
-![Traffic VCD Waveform](images/traffic_vcd.png)
+<img src="./images/traffic_vcd.png" width="900">
+
+
+Waveform generated from the Verilog testbench showing FSM transitions and traffic light signals.
 
 
 ---
@@ -266,19 +272,20 @@ Controller monitoring
 # 🖥️ Streamlit Dashboard
 
 
-## Dashboard View 1
+## Dashboard Screenshot 1
 
-![Dashboard 1](images/dashboard1.png)
-
-
-## Dashboard View 2
-
-![Dashboard 2](images/dashboard2.png)
+<img src="./images/dashboard1.png" width="900">
 
 
-## Dashboard View 3
+## Dashboard Screenshot 2
 
-![Dashboard 3](images/dashboard3.png)
+<img src="./images/dashboard2.png" width="900">
+
+
+## Dashboard Screenshot 3
+
+<img src="./images/dashboard3.png" width="900">
+
 
 
 Interactive dashboard showing:
